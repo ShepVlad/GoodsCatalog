@@ -81,6 +81,7 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <Content Include="Img\Background-img.jpg" />
     <Content Include="Img\OurCompanyImg\Wolf.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

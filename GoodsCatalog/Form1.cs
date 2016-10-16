@@ -19,8 +19,18 @@ namespace GoodsCatalog
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            pictureBox1.Load(@"C:\Users\Vlad\Desktop\Vladikas\GoodsCatalog\GoodsCatalog\Img\OurCompanyImg\Wolf.jpg");
+            pictureBox3.Load(@"C:\Users\Vlad\Desktop\Vladikas\GoodsCatalog\GoodsCatalog\Img\OurCompanyImg\Wolf.jpg");
+            pictureBox1.Load(@"D:\projects\GoodsCatalog\GoodsCatalog\Img\Background-img.jpg");
+        }
 
+        private void label3_Click(object sender, EventArgs e)
+        {
+            //Случайно нажал удалять боюсь
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            //Случайно нажал удалять боюсь
         }
     }
 }
