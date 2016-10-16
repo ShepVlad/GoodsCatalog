@@ -31,29 +31,33 @@
             this.components = new System.ComponentModel.Container();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.Category = new System.Windows.Forms.ListBox();
-            this.Catalog = new System.Windows.Forms.ListBox();
-            this.listBox1 = new System.Windows.Forms.ListBox();
-            this.label2 = new System.Windows.Forms.Label();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.groupBox6 = new System.Windows.Forms.GroupBox();
-            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.Catalog = new System.Windows.Forms.ListBox();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.добавитьВКорзинуToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox4.SuspendLayout();
+            this.contextMenuStrip1.SuspendLayout();
             this.groupBox5.SuspendLayout();
             this.groupBox6.SuspendLayout();
-            this.contextMenuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.pictureBox1);
             this.groupBox1.Location = new System.Drawing.Point(27, 12);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(227, 187);
@@ -71,6 +75,18 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = " Категории";
             // 
+            // Category
+            // 
+            this.Category.FormattingEnabled = true;
+            this.Category.Items.AddRange(new object[] {
+            "Category 1",
+            "Category 2"});
+            this.Category.Location = new System.Drawing.Point(7, 20);
+            this.Category.Name = "Category";
+            this.Category.Size = new System.Drawing.Size(214, 212);
+            this.Category.Sorted = true;
+            this.Category.TabIndex = 0;
+            // 
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.textBox1);
@@ -83,6 +99,33 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Корзина";
             // 
+            // textBox1
+            // 
+            this.textBox1.Enabled = false;
+            this.textBox1.Location = new System.Drawing.Point(103, 155);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 20);
+            this.textBox1.TabIndex = 4;
+            this.textBox1.Text = "0";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Palatino Linotype", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label2.Location = new System.Drawing.Point(12, 155);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(70, 28);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "Price :";
+            // 
+            // listBox1
+            // 
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.Location = new System.Drawing.Point(17, 18);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(215, 134);
+            this.listBox1.TabIndex = 2;
+            // 
             // groupBox4
             // 
             this.groupBox4.Controls.Add(this.Catalog);
@@ -92,6 +135,31 @@
             this.groupBox4.TabIndex = 2;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Каталог ";
+            // 
+            // Catalog
+            // 
+            this.Catalog.ContextMenuStrip = this.contextMenuStrip1;
+            this.Catalog.FormattingEnabled = true;
+            this.Catalog.Items.AddRange(new object[] {
+            "Tovar"});
+            this.Catalog.Location = new System.Drawing.Point(7, 19);
+            this.Catalog.Name = "Catalog";
+            this.Catalog.Size = new System.Drawing.Size(214, 212);
+            this.Catalog.Sorted = true;
+            this.Catalog.TabIndex = 1;
+            // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.добавитьВКорзинуToolStripMenuItem});
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(185, 26);
+            // 
+            // добавитьВКорзинуToolStripMenuItem
+            // 
+            this.добавитьВКорзинуToolStripMenuItem.Name = "добавитьВКорзинуToolStripMenuItem";
+            this.добавитьВКорзинуToolStripMenuItem.Size = new System.Drawing.Size(184, 22);
+            this.добавитьВКорзинуToolStripMenuItem.Text = "Добавить в Корзину";
             // 
             // groupBox5
             // 
@@ -112,57 +180,6 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "How to use Project";
             // 
-            // Category
-            // 
-            this.Category.FormattingEnabled = true;
-            this.Category.Items.AddRange(new object[] {
-            "Category 1",
-            "Category 2"});
-            this.Category.Location = new System.Drawing.Point(7, 20);
-            this.Category.Name = "Category";
-            this.Category.Size = new System.Drawing.Size(214, 212);
-            this.Category.Sorted = true;
-            this.Category.TabIndex = 0;
-            // 
-            // Catalog
-            // 
-            this.Catalog.ContextMenuStrip = this.contextMenuStrip1;
-            this.Catalog.FormattingEnabled = true;
-            this.Catalog.Items.AddRange(new object[] {
-            "Tovar"});
-            this.Catalog.Location = new System.Drawing.Point(7, 19);
-            this.Catalog.Name = "Catalog";
-            this.Catalog.Size = new System.Drawing.Size(214, 212);
-            this.Catalog.Sorted = true;
-            this.Catalog.TabIndex = 1;
-            // 
-            // listBox1
-            // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(17, 18);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(215, 134);
-            this.listBox1.TabIndex = 2;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Palatino Linotype", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label2.Location = new System.Drawing.Point(12, 155);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(70, 28);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "Price :";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Enabled = false;
-            this.textBox1.Location = new System.Drawing.Point(103, 155);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 4;
-            this.textBox1.Text = "0";
-            // 
             // groupBox6
             // 
             this.groupBox6.Controls.Add(this.label3);
@@ -182,18 +199,13 @@
             this.label3.TabIndex = 0;
             this.label3.Text = "Информация О Товаре";
             // 
-            // contextMenuStrip1
+            // pictureBox1
             // 
-            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.добавитьВКорзинуToolStripMenuItem});
-            this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(185, 26);
-            // 
-            // добавитьВКорзинуToolStripMenuItem
-            // 
-            this.добавитьВКорзинуToolStripMenuItem.Name = "добавитьВКорзинуToolStripMenuItem";
-            this.добавитьВКорзинуToolStripMenuItem.Size = new System.Drawing.Size(184, 22);
-            this.добавитьВКорзинуToolStripMenuItem.Text = "Добавить в Корзину";
+            this.pictureBox1.Location = new System.Drawing.Point(7, 20);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(214, 161);
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // Form1
             // 
@@ -208,15 +220,18 @@
             this.Controls.Add(this.groupBox1);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
+            this.groupBox1.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
             this.groupBox4.ResumeLayout(false);
+            this.contextMenuStrip1.ResumeLayout(false);
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
             this.groupBox6.ResumeLayout(false);
             this.groupBox6.PerformLayout();
-            this.contextMenuStrip1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -238,6 +253,7 @@
         private System.Windows.Forms.ToolStripMenuItem добавитьВКорзинуToolStripMenuItem;
         private System.Windows.Forms.GroupBox groupBox6;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 

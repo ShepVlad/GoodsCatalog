@@ -16,5 +16,11 @@ namespace GoodsCatalog
         {
             InitializeComponent();
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            pictureBox1.Load(@"C:\Users\Vlad\Desktop\Vladikas\GoodsCatalog\GoodsCatalog\Img\OurCompanyImg\Wolf.jpg");
+
+        }
     }
 }
