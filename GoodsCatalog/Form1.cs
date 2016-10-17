@@ -19,9 +19,7 @@ namespace GoodsCatalog
 
         private void Form1_Load(object sender, EventArgs e)
         {
-           
             pictureBox3.Load(@"..\..\Img\OurCompanyImg\Wolf.jpg");
-           // pictureBox1.Load(@"../../Background-img.jpg");
             pictureBox1.Load(@"..\..\Img\Background-img.jpg");
             button1.Enabled = false;
             button2.Enabled = false;
